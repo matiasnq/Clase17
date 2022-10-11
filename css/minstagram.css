@@ -1,0 +1,200 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+*::before,
+*::after,
+* {
+  box-sizing: border-box;
+}
+
+nav {
+  height: 50px;
+  border-bottom: 1px solid #dad8d8;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.04), 0 2px 5px rgba(0, 0, 0, 0.04);
+  width: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 100%;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  background: white;
+  z-index: 1000;
+}
+nav img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+nav p {
+  font-size: 2rem;
+  margin-left: 10px;
+}
+
+.card {
+  max-width: 300px;
+  min-width: 280px;
+  box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.04), 0 2px 5px rgba(0, 0, 0, 0.04);
+  border: 1px solid #dad8d8;
+  border-radius: 0.35rem;
+}
+.card header {
+  padding: 0.5rem 0.25rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  line-height: 1;
+  display: grid;
+  grid-template-columns: 40px 1fr;
+  align-items: end;
+  border-bottom: 1px solid #dad8d8;
+}
+.card header img {
+  width: 25px;
+  height: 25px;
+  border: 2px solid black;
+  border-radius: 100%;
+  margin-left: 10px;
+  padding: 2px;
+}
+.card header p {
+  display: inline-block;
+}
+.card figure {
+  padding: 0.25rem;
+  border-bottom: 1px solid #dad8d8;
+  height: 290px;
+  overflow: hidden;
+}
+.card figure img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+}
+.card figure img.gray {
+  filter: grayscale(100%);
+}
+.card figure img.sepia {
+  filter: sepia(100%);
+}
+.card footer {
+  padding: 0.5rem 0.25rem;
+  display: grid;
+  grid-template-columns: 1fr 50px;
+}
+.card footer .data {
+  padding: 0 0.5rem;
+}
+.card footer .data time {
+  opacity: 0.5;
+  margin-bottom: 1rem;
+  display: block;
+}
+.card footer .data p {
+  min-height: 70px;
+}
+.card footer .button-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+.card footer .button-wrapper button {
+  width: 40px;
+  height: 40px;
+  background: none;
+  border: none;
+  color: red;
+}
+.card footer .button-wrapper button img {
+  width: 100%;
+  height: auto;
+}
+.card footer .button-wrapper button img:hover {
+  opacity: 0.5;
+}
+
+.deck {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 300px;
+  justify-content: center;
+  gap: 1rem;
+  padding: 0 1rem;
+}
+
+@font-face {
+  font-family: "Instagram Sans";
+  src: url("/fonts/Instagram-sans.ttf");
+}
+.text-bold {
+  font-weight: 700;
+}
+
+.text-normal {
+  font-weight: 400;
+}
+
+body {
+  color: #000;
+  font-family: "Instagram Sans";
+  min-width: 350px;
+}
+
+main {
+  padding-top: 1rem;
+  max-width: 1000px;
+  margin: auto;
+}/*# sourceMappingURL=minstagram.css.map */

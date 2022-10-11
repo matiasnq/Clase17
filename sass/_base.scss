@@ -1,0 +1,13 @@
+@import 'variables';
+
+body {
+    color: $text;
+    font-family: 'Instagram Sans';
+    min-width: 350px
+}
+
+main {
+    padding-top: 1rem;
+    max-width: 1000px;
+    margin: auto;
+}
